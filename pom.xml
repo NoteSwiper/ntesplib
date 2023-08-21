@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>me.noteswiper.ntespLib</groupId>
+	<artifactId>ntespLib</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+	<name>ntespLib</name>
+	<description>A random library</description>
+	<inceptionYear>2023</inceptionYear>
+	<url>https://github.com/NoteSwiper/ntesplib</url>
+	<licenses>
+		<license>
+			<name>CC BY-NC-ND 4.0</name>
+			<url>http://creativecommons.org/licenses/by-nc-sa/4.0/</url>
+			<distribution>repo</distribution>
+			<comments>Creative Commons</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>ntesp</name>
+		<url>https://github.com/ntesp</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>noteswiper</id>
+			<name>Note Swiper</name>
+			<email>ryuuking0410b@gmail.com</email>
+			<url>https://github.com/NoteSwiper</url>
+			<organization>trslim</organization>
+			<organizationUrl>https://github.com/trslim</organizationUrl>
+			<roles>
+				<role>Web Developer</role>
+				<role>Web Designer</role>
+				<role>Mod Developer</role>
+				<role>Game Developer</role>
+				<role>Program Developer</role>
+				<role>Youtuber</role>
+				<role>Social Networker</role>
+			</roles>
+			<timezone>Asia/Tokyo</timezone>
+			<properties>
+				<youtubeUrl>https://www.youtube.com/@Note.Swiper</youtubeUrl>
+				<twitterUrl>https://twitter.com/NoteSwiper</twitterUrl>
+				<githubUrl>https://github.com/NoteSwiper</githubUrl>
+				<tumblrUrl>https://noteswiper-rebin.tunblr.com</tumblrUrl>
+				<website>https://noteswiper.github.io</website>
+			</properties>
+		</developer>
+	</developers>
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/NoteSwiper/ntesplib/issues</url>
+	</issueManagement>
+	<scm>
+		<url>https://github.com/NoteSwiper/ntesplib.git</url>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub NoteSwiper Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/NoteSwiper/ntesplib</url>
+		</repository>
+	</distributionManagement>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<directory>${project.basedir}/target</directory>
+		<outputDirectory>${project.build.directory}/output</outputDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>${project.basedir}/src/test/resources</directory>
+			</testResource>
+		</testResources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.5.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.8.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.7.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
